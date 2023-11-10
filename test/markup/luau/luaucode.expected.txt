@@ -1,0 +1,68 @@
+<span class="hljs-comment">--// Vector</span>
+<span class="hljs-comment">--// Written by Demo (R0BL0XIAN_D3M0)</span>
+<span class="hljs-comment">--// [https://www.roblox.com/users/289025524/profile]</span>
+<span class="hljs-comment">--// 11/09/2023</span>
+
+<span class="hljs-keyword">type</span> TVector = Vector2 | Vector3
+
+<span class="hljs-keyword">local</span> Vector = {}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.FromVector2XY</span><span class="hljs-params">(vector: Vector2)</span></span>
+    <span class="hljs-keyword">return</span> (Vector3.new(vector.X, vector.Y, 0))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.FromVector2XZ</span><span class="hljs-params">(vector: Vector2)</span></span>
+    <span class="hljs-keyword">return</span> (Vector3.new(vector.X, 0, vector.Y))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.RetrieveAngleRadian</span><span class="hljs-params">(vector: Vector2, _vector: Vector2)</span></span>
+    <span class="hljs-keyword">if</span> vector.Magnitude == 0 <span class="hljs-keyword">then</span>
+        <span class="hljs-keyword">return</span> nil
+    <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">return</span> (math.acos(vector:Dot(_vector)))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.AngleBetweenVectors</span><span class="hljs-params">(vector: Vector2, _vector: Vector2)</span></span>
+    <span class="hljs-keyword">local</span> newVector: Vector2 = (_vector.Magnitude * vector)
+    <span class="hljs-keyword">local</span> _newVector: Vector2 = (vector.Magnitude * _vector)
+
+    <span class="hljs-keyword">return</span> (2 * (math.atan2((_newVector - newVector).Magnitude, (newVector + _newVector).Magnitude)))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.Round</span><span class="hljs-params">(vector: Vector3, amount: number)</span></span>
+    <span class="hljs-keyword">return</span> (
+        Vector3.new(
+            ((math.round(vector.X / amount)) * amount),
+            ((math.round(vector.Y / amount)) * amount),
+            ((math.round(vector.Z / amount)) * amount)
+        )
+    )
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.ClampMagnitude</span><span class="hljs-params">(vector: TVector, maxMagnitude: number)</span></span>
+    <span class="hljs-keyword">return</span> ((vector.Magnitude > maxMagnitude) <span class="hljs-keyword">and</span> (vector.Unit * maxMagnitude) <span class="hljs-keyword">or</span> vector)
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.AngleBetween</span><span class="hljs-params">(vector: TVector, _vector: TVector)</span></span>
+    <span class="hljs-keyword">return</span> (math.acos(math.clamp(vector.Unit:Dot(_vector.Unit), -1, 1)))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.AngleBetweenSigned</span><span class="hljs-params">(vector: TVector, _vector: TVector, axisVector: TVector)</span></span>
+    <span class="hljs-keyword">local</span> angle: number = Vector.AngleBetween(vector, _vector)
+
+    <span class="hljs-keyword">return</span> (angle * (math.sign(axisVector:Dot(vector:Cross(_vector)))))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vector.RetrieveRandomUnitVector</span><span class="hljs-params">()</span></span>
+    <span class="hljs-keyword">local</span> randomX: number = (2 * ((math.random()) - 0.5))
+    <span class="hljs-keyword">local</span> randomY: number = (6.2831853071796 * (math.random()))
+    <span class="hljs-keyword">local</span> randomZ: number = ((1 - (randomX * randomX)) ^ 0.5)
+
+    <span class="hljs-keyword">local</span> X: number = randomX
+    <span class="hljs-keyword">local</span> Y: number = (randomZ * (math.cos(randomZ)))
+    <span class="hljs-keyword">local</span> Z: number = (randomZ * (math.sin(randomY)))
+
+    <span class="hljs-keyword">return</span> (Vector3.new(X, Y, Z))
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">return</span> Vector
