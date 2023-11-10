@@ -1,13 +1,14 @@
 ![](./assets/luau-logo.png)
 
-# Luau language grammar for programming under the [Roblox Platform](https://devforum.roblox.com/) [view the Luau language here](https://luau-lang.org/)
+# Luau language grammar for programming under the [Roblox Platform](https://devforum.roblox.com/).
+## [View the Luau language here](https://luau-lang.org/).
 
 [![NPM](https://nodei.co/npm/highlightjs-luau.png)](https://www.npmjs.com/package/highlightjs-luau)
 
 [![npm](https://img.shields.io/npm/v/highlightjs-luau)](https://www.npmjs.com/package/highlightjs-luau)
 [![npm](https://img.shields.io/npm/dt/highlightjs-luau)](https://www.npmjs.com/package/highlightjs-luau)
 ![install size](https://badgen.net/packagephobia/install/highlightjs-luau)
-[![GitHub](https://img.shields.io/github/license/highlightjs/highlightjs-luau)](https://github.com/robloxiandemo/highlightjs-luau/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/robloxiandemo/highlightjs-luau)](https://github.com/robloxiandemo/highlightjs-luau/blob/main/LICENSE.md)
 ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/highlightjs-luau)
 [![CDN download](https://badgen.net/badge/jsDelivr/download/blue?icon=jsdelivr)](https://cdn.jsdelivr.net/npm/highlightjs-luau/dist/luau.min.js)
 
