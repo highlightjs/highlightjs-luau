@@ -1,0 +1,33 @@
+{
+	"name": "highlightjs-luau",
+	"version": "1.0.0",
+	"description": "Luau highlighting support plugin for highlight.js.",
+	"main": "src/languages/luau.js",
+	"scripts": {
+		"prettier:verify": "prettier --list-different \"{test,src}/**/*\"",
+		"prettier": "prettier --write \"{test,src}/**/*\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/robloxiandemo/highlightjs-luau.git"
+	},
+	"keywords": [
+		"Luau",
+		"Roblox",
+		"hljs",
+		"highlightjs",
+		"highlight.js"
+	],
+	"files": [
+		"assets",
+		"dist",
+		"src",
+		"test"
+	],
+	"author": "Robloxian Demo (https://github.com/robloxiandemo)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/robloxiandemo/highlightjs-luau/issues"
+	},
+	"homepage": "https://github.com/robloxiandemo/highlightjs-luau#readme"
+}
