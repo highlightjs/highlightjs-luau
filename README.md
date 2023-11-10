@@ -1,4 +1,4 @@
-![](./assets/luau-logo.svg)
+![](./assets/luau-logo.png)
 
 # Luau language grammar for programming under the [Roblox Platform](https://devforum.roblox.com/) [view the Luau language here](https://luau-lang.org/)
 
