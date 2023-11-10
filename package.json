@@ -1,6 +1,6 @@
 {
 	"name": "highlightjs-luau",
-	"version": "1.0.0",
+	"version": "1.0.1-beta",
 	"description": "Luau highlighting support plugin for highlight.js.",
 	"main": "src/languages/luau.js",
 	"scripts": {
