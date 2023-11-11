@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/robloxiandemo/highlightjs-luau.git"
+		"url": "git+https://github.com/highlightjs/highlightjs-luau.git"
 	},
 	"keywords": [
 		"Luau",
@@ -27,7 +27,7 @@
 	"author": "Robloxian Demo (https://github.com/robloxiandemo)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/robloxiandemo/highlightjs-luau/issues"
+		"url": "https://github.com/highlightjs/highlightjs-luau/issues"
 	},
-	"homepage": "https://github.com/robloxiandemo/highlightjs-luau#readme"
+	"homepage": "https://github.com/highlightjs/highlightjs-luau#readme"
 }

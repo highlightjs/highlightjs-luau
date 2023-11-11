@@ -1,6 +1,7 @@
 ![](./assets/luau-logo.png)
 
 # Luau language grammar for programming under the [Roblox Platform](https://devforum.roblox.com/).
+
 ## [View the Luau language here](https://luau-lang.org/).
 
 [![NPM](https://nodei.co/npm/highlightjs-luau.png)](https://www.npmjs.com/package/highlightjs-luau)
@@ -8,7 +9,7 @@
 [![npm](https://img.shields.io/npm/v/highlightjs-luau)](https://www.npmjs.com/package/highlightjs-luau)
 [![npm](https://img.shields.io/npm/dt/highlightjs-luau)](https://www.npmjs.com/package/highlightjs-luau)
 ![install size](https://badgen.net/packagephobia/install/highlightjs-luau)
-[![GitHub](https://img.shields.io/github/license/robloxiandemo/highlightjs-luau)](https://github.com/robloxiandemo/highlightjs-luau/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/highlightjs/highlightjs-luau)](https://github.com/highlightjs/highlightjs-luau/blob/main/LICENSE.md)
 ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/highlightjs-luau)
 [![CDN download](https://badgen.net/badge/jsDelivr/download/blue?icon=jsdelivr)](https://cdn.jsdelivr.net/npm/highlightjs-luau/dist/luau.min.js)
 
@@ -35,8 +36,9 @@ Simply load this module after loading Highlight.js. You'll use the minified vers
 ### Using directly from the UNPKG CDN
 
 ```html
-<script type="text/javascript"
-  src="https://unpkg.com/highlightjs-luau/dist/luau.min.js"></script>
+<script
+	type="text/javascript"
+	src="https://unpkg.com/highlightjs-luau/dist/luau.min.js"></script>
 ```
 
 - More info: <https://unpkg.com>
@@ -49,7 +51,7 @@ If you're using Node / Webpack / Rollup / Browserify, etc, simply require the la
 var hljs = require('highlightjs');
 var hljsLuau = require('highlightjs-luau');
 
-hljs.registerLanguage("luau", hljsLuau);
+hljs.registerLanguage('luau', hljsLuau);
 hljs.highlightAll();
 ```
 
@@ -60,7 +62,7 @@ Highlightjs-luau is released under the MIT License. See [LICENSE](/LICENSE.md) f
 
 ## Author
 
-Robloxian Demo [https://github.com/RobloxianDemo](https://github.com/RobloxianDemo)
+Robloxian Demo [https://github.com/RobloxianDemo](https://github.com/RobloxianDemo).
 
 ## Contribution
 
@@ -69,5 +71,5 @@ Feel free to create issues or (even better) pull requests.
 ## Links
 
 - The official site for the Highlight.js library is <https://highlightjs.org/>.
-- The Highlight.js GitHub project: <https://github.com/highlightjs/highlight.js>
-- Learn more about the Luau language: <https://luau-lang.org/why>
+- The Highlight.js GitHub project: <https://github.com/highlightjs/highlight.js>.
+- Learn more about the Luau language: <https://luau-lang.org/why>.
