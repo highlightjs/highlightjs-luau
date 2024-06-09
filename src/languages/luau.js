@@ -51,7 +51,7 @@ export default function (hljs) {
       $pattern: hljs.UNDERSCORE_IDENT_RE,
       literal: 'true false nil',
       keyword:
-        'and break do else elseif end for goto if in local not or repeat return then until while',
+        'and break do else elseif end for if in local not or repeat return then until while',
       built_in: BUILT_IN
     },
     contains: COMMENTS.concat([
