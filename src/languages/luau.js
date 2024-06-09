@@ -34,9 +34,9 @@ export default function (hljs) {
     // New in Luau (metatags -> globals)
     '__idiv __iter newproxy rawlen ' +
     // Standard methods and properties:
-    'collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring ' +
+    'collectgarbage error getfenv getmetatable ipairs loadstring ' +
     'module next pairs pcall print rawequal rawget rawset require select setfenv ' +
-    'setmetatable tonumber tostring type unpack xpcall arg self ' +
+    'setmetatable tonumber tostring type unpack xpcall self ' +
     // Library methods and properties (one line per library):
     'coroutine resume yield status wrap create running debug getupvalue ' +
     'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' +
