@@ -38,13 +38,12 @@ export default function (hljs) {
     'module next pairs pcall print rawequal rawget rawset require select setfenv ' +
     'setmetatable tonumber tostring type unpack xpcall self ' +
     // Library methods and properties (one line per library):
-    'coroutine resume yield status wrap create running debug getupvalue ' +
-    'debug sethook getmetatable gethook setmetatable setlocal traceback setfenv getinfo setupvalue getlocal getregistry getfenv ' +
-    'io lines write close flush open output type read stderr stdin input stdout popen tmpfile ' +
+    'coroutine resume yield status wrap create running ' +
+    'debug traceback ' +
     'math log max acos huge ldexp pi cos tanh pow deg tan cosh sinh random randomseed frexp ceil floor rad abs sqrt modf asin min mod fmod log10 atan2 exp sin atan ' +
-    'os exit setlocale date getenv difftime remove time clock tmpname rename execute package preload loadlib loaded loaders cpath config path seeall ' +
-    'string sub upper len gfind rep find match char dump gmatch reverse byte format gsub lower ' +
-    'table setn insert getn foreachi maxn foreach concat sort remove';
+    'os date difftime time clock ' +
+    'string sub upper len rep find match char gmatch reverse byte format gsub lower ' +
+    'table insert getn foreachi maxn foreach concat sort remove';
 
   return {
     name: 'Luau',
