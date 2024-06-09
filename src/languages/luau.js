@@ -29,7 +29,7 @@ export default function (hljs) {
 
   const BUILT_IN =
     // Lua metatags and globals:
-    '_G _ENV _VERSION __index __newindex __mode __call __metatable __tostring __len ' +
+    '_G _VERSION __index __newindex __mode __call __metatable __tostring __len ' +
     '__gc __add __sub __mul __div __mod __pow __concat __unm __eq __lt __le assert ' +
     // New in Luau (metatags -> globals)
     '__idiv __iter newproxy rawlen ' +
