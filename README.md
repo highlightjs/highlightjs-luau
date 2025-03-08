@@ -1,8 +1,8 @@
-![](./assets/luau-logo.png)
+<img src="./assets/luau-logo.png" width="128" align="right">
 
-# Luau language grammar for programming under the [Roblox Platform](https://devforum.roblox.com/).
+# Luau Language Grammar for highlight.js
 
-## [View the Luau language here](https://luau-lang.org/).
+[Luau](https://luau.org) is a fast, small, safe, gradually typed embeddable scripting language derived from Lua.
 
 [![NPM](https://nodei.co/npm/highlightjs-luau.png)](https://www.npmjs.com/package/highlightjs-luau)
 
